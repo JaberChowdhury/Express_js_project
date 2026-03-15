@@ -1,10 +1,6 @@
 import { Pool } from "pg";
 import config from "./index.ts";
 
-if (!process.env.CONNECTION_STRING) {
-  throw new Error("CONNECTION_STRING missing in .env");
-}
-
 const pool = new Pool({
   connectionString: config.connection_string,
   ssl: { rejectUnauthorized: false },
