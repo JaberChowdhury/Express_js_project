@@ -1,0 +1,25 @@
+info:
+  name: PUT - update user
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/users/34
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Mahmud Hossain",
+          "email": "mahmud.hossain67@example.com",
+          "age": 35,
+          "phone": "01710000006",
+          "address": "Barisal, Bangladesh"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

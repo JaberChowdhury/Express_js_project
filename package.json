@@ -3,12 +3,23 @@
   "module": "./src/server.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch ./src/server.ts"
+    "dev": "node --watch ./src/server.ts",
+    "build": ""
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^25.5.0",
+    "@types/pg": "^8.18.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "pg": "^8.20.0"
   }
 }

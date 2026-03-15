@@ -1,0 +1,26 @@
+info:
+  name: POST - todos
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/todos
+  body:
+    type: json
+    data: |-
+      {
+        "user_id": 56,
+        "title": "Car service",
+        "description": "Oil change and tire rotation",
+        "completed": false,
+        "due_date": "2026-03-22",
+        "created_at": "2026-03-15T09:15:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
