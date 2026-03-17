@@ -5,7 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/users/34
+  url: http://localhost:5000/api/users/31
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSkFCRVIgSE9TU0FJTiBDSE9XREhVUlkiLCJlbWFpbCI6ImphYmVyaGMyMDAyQGdtYWlsLmNvbSIsImlhdCI6MTc3MzczMjU4MiwiZXhwIjoxNzc0MzM3MzgyfQ.wjMzd7YWIe2YLaRWhPZXWLU4VdB6voY8ZP0d_qAaUx8
   auth: inherit
 
 settings:

@@ -1,15 +1,18 @@
 import { Router } from "express";
 import { type Request, type Response } from "express";
 import { pool } from "../config/db.ts";
+import { hash } from "bcryptjs";
 
 const userRoute = Router();
 
 userRoute.post("/users", async (req: Request, res: Response) => {
-  const { name, email, age, phone, address } = req.body;
+  const { name, email, password, age, phone, address } = req.body;
+
+  const hashedPassword = await hash(password as string, 10);
   try {
     const result = await pool.query(
-      `INSERT INTO users(name, email, age, phone, address) VAlUES($1, $2, $3, $4, $5) RETURNING *`,
-      [name, email, age, phone, address],
+      `INSERT INTO users(name, email, password, age, phone, address) VAlUES($1, $2, $3, $4, $5, $6) RETURNING *`,
+      [name, email, hashedPassword, age, phone, address],
     );
     res.status(201).send({
       success: true,

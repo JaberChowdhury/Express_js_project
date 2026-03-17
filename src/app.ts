@@ -4,6 +4,9 @@ import userRoute from "./routes/users.ts";
 import { homeRoute } from "./routes/home.ts";
 import todosRoute from "./routes/todos.ts";
 import logger from "./middleware/logger.ts";
+import { SeedRouter } from "./routes/seed/index.ts";
+import authRouter from "./routes/auth/auth.router.ts";
+import auth from "./middleware/auth.ts";
 
 const app = express();
 
@@ -13,8 +16,11 @@ app.use(morgan("dev"));
 app.use(logger);
 
 app.use("/", homeRoute);
-app.use("/api", userRoute);
+app.use("/api", auth(), userRoute);
 app.use("/api", todosRoute);
+app.use("/api", SeedRouter);
+app.use("/auth", authRouter);
+
 app.use((req, res) => {
   res.status(404).json({
     success: false,

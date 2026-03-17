@@ -1,0 +1,18 @@
+info:
+  name: clean db
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/clean/db
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,684 @@
+info:
+  name: reset db
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/reset/db
+  body:
+    type: json
+    data: |-
+      {
+        "users": [
+          {
+            "name": "Alice Johnson",
+            "email": "alice1@example.com",
+            "password": "pass123",
+            "age": 28,
+            "phone": "123-456-1001",
+            "address": "123 Main St, Cityville"
+          },
+          {
+            "name": "Bob Smith",
+            "email": "bob2@example.com",
+            "password": "pass123",
+            "age": 35,
+            "phone": "123-456-1002",
+            "address": "456 Oak Ave, Townsville"
+          },
+          {
+            "name": "Carol Davis",
+            "email": "carol3@example.com",
+            "password": "pass123",
+            "age": 24,
+            "phone": "123-456-1003",
+            "address": "789 Pine Rd, Villagetown"
+          },
+          {
+            "name": "David Wilson",
+            "email": "david4@example.com",
+            "password": "pass123",
+            "age": 31,
+            "phone": "123-456-1004",
+            "address": "321 Maple St, Hamletville"
+          },
+          {
+            "name": "Eva Brown",
+            "email": "eva5@example.com",
+            "password": "pass123",
+            "age": 27,
+            "phone": "123-456-1005",
+            "address": "654 Birch Ln, Smalltown"
+          },
+          {
+            "name": "Frank Taylor",
+            "email": "frank6@example.com",
+            "password": "pass123",
+            "age": 40,
+            "phone": "123-456-1006",
+            "address": "987 Cedar Dr, Metrocity"
+          },
+          {
+            "name": "Grace Lee",
+            "email": "grace7@example.com",
+            "password": "pass123",
+            "age": 22,
+            "phone": "123-456-1007",
+            "address": "135 Elm St, Rivertown"
+          },
+          {
+            "name": "Henry White",
+            "email": "henry8@example.com",
+            "password": "pass123",
+            "age": 36,
+            "phone": "123-456-1008",
+            "address": "246 Spruce Ave, Lakeville"
+          },
+          {
+            "name": "Ivy Harris",
+            "email": "ivy9@example.com",
+            "password": "pass123",
+            "age": 29,
+            "phone": "123-456-1009",
+            "address": "357 Oak Blvd, Hilltown"
+          },
+          {
+            "name": "Jack Martin",
+            "email": "jack10@example.com",
+            "password": "pass123",
+            "age": 33,
+            "phone": "123-456-1010",
+            "address": "468 Pine St, Valleyville"
+          },
+          {
+            "name": "Karen Clark",
+            "email": "karen11@example.com",
+            "password": "pass123",
+            "age": 25,
+            "phone": "123-456-1011",
+            "address": "579 Maple Rd, Brooktown"
+          },
+          {
+            "name": "Leo Lewis",
+            "email": "leo12@example.com",
+            "password": "pass123",
+            "age": 38,
+            "phone": "123-456-1012",
+            "address": "680 Birch Ln, Rivercity"
+          },
+          {
+            "name": "Mia Young",
+            "email": "mia13@example.com",
+            "password": "pass123",
+            "age": 26,
+            "phone": "123-456-1013",
+            "address": "791 Cedar St, Greenfield"
+          },
+          {
+            "name": "Nathan Hall",
+            "email": "nathan14@example.com",
+            "password": "pass123",
+            "age": 32,
+            "phone": "123-456-1014",
+            "address": "802 Elm Dr, Eastville"
+          },
+          {
+            "name": "Olivia Allen",
+            "email": "olivia15@example.com",
+            "password": "pass123",
+            "age": 30,
+            "phone": "123-456-1015",
+            "address": "913 Spruce Rd, Westtown"
+          },
+          {
+            "name": "Paul King",
+            "email": "paul16@example.com",
+            "password": "pass123",
+            "age": 41,
+            "phone": "123-456-1016",
+            "address": "102 Maple Blvd, Northcity"
+          },
+          {
+            "name": "Quinn Scott",
+            "email": "quinn17@example.com",
+            "password": "pass123",
+            "age": 23,
+            "phone": "123-456-1017",
+            "address": "203 Oak St, Southville"
+          },
+          {
+            "name": "Rachel Green",
+            "email": "rachel18@example.com",
+            "password": "pass123",
+            "age": 34,
+            "phone": "123-456-1018",
+            "address": "304 Pine Ave, Hillcrest"
+          },
+          {
+            "name": "Steve Adams",
+            "email": "steve19@example.com",
+            "password": "pass123",
+            "age": 37,
+            "phone": "123-456-1019",
+            "address": "405 Birch Rd, Lakeside"
+          },
+          {
+            "name": "Tina Baker",
+            "email": "tina20@example.com",
+            "password": "pass123",
+            "age": 28,
+            "phone": "123-456-1020",
+            "address": "506 Cedar Ln, Meadowtown"
+          },
+          {
+            "name": "Uma Nelson",
+            "email": "uma21@example.com",
+            "password": "pass123",
+            "age": 29,
+            "phone": "123-456-1021",
+            "address": "607 Elm St, Riverbend"
+          },
+          {
+            "name": "Victor Perez",
+            "email": "victor22@example.com",
+            "password": "pass123",
+            "age": 36,
+            "phone": "123-456-1022",
+            "address": "708 Spruce Dr, Brookfield"
+          },
+          {
+            "name": "Wendy Roberts",
+            "email": "wendy23@example.com",
+            "password": "pass123",
+            "age": 27,
+            "phone": "123-456-1023",
+            "address": "809 Maple Rd, Greenlake"
+          },
+          {
+            "name": "Xavier Turner",
+            "email": "xavier24@example.com",
+            "password": "pass123",
+            "age": 33,
+            "phone": "123-456-1024",
+            "address": "910 Oak Ln, Hilltown"
+          },
+          {
+            "name": "Yara Collins",
+            "email": "yara25@example.com",
+            "password": "pass123",
+            "age": 31,
+            "phone": "123-456-1025",
+            "address": "101 Pine St, Meadowfield"
+          },
+          {
+            "name": "Zane Edwards",
+            "email": "zane26@example.com",
+            "password": "pass123",
+            "age": 39,
+            "phone": "123-456-1026",
+            "address": "202 Birch Blvd, Riverview"
+          },
+          {
+            "name": "Abby Foster",
+            "email": "abby27@example.com",
+            "password": "pass123",
+            "age": 24,
+            "phone": "123-456-1027",
+            "address": "303 Cedar Rd, Lakeshore"
+          },
+          {
+            "name": "Brian Gray",
+            "email": "brian28@example.com",
+            "password": "pass123",
+            "age": 35,
+            "phone": "123-456-1028",
+            "address": "404 Elm Ave, Brooktown"
+          },
+          {
+            "name": "Clara Hughes",
+            "email": "clara29@example.com",
+            "password": "pass123",
+            "age": 26,
+            "phone": "123-456-1029",
+            "address": "505 Spruce St, Hillfield"
+          },
+          {
+            "name": "Dylan James",
+            "email": "dylan30@example.com",
+            "password": "pass123",
+            "age": 32,
+            "phone": "123-456-1030",
+            "address": "606 Maple Dr, Eastfield"
+          }
+        ],
+        "todos": [
+          {
+            "user_id": 1,
+            "title": "Buy groceries",
+            "description": "Milk, eggs, bread",
+            "completed": false,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 1,
+            "title": "Finish project",
+            "description": "Complete the API by Friday",
+            "completed": false,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 2,
+            "title": "Workout",
+            "description": "Go to the gym for an hour",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 2,
+            "title": "Call mom",
+            "description": "Check in and chat",
+            "completed": false,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 3,
+            "title": "Read book",
+            "description": "Finish reading 'Clean Code'",
+            "completed": false,
+            "due_date": "2026-03-25"
+          },
+          {
+            "user_id": 3,
+            "title": "Plan vacation",
+            "description": "Look for hotels in Italy",
+            "completed": false,
+            "due_date": "2026-04-10"
+          },
+          {
+            "user_id": 4,
+            "title": "Pay bills",
+            "description": "Electricity and internet",
+            "completed": true,
+            "due_date": "2026-03-15"
+          },
+          {
+            "user_id": 4,
+            "title": "Dentist appointment",
+            "description": "Routine checkup",
+            "completed": false,
+            "due_date": "2026-03-22"
+          },
+          {
+            "user_id": 5,
+            "title": "Grocery shopping",
+            "description": "Fruits and vegetables",
+            "completed": false,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 5,
+            "title": "Submit report",
+            "description": "Monthly finance report",
+            "completed": true,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 6,
+            "title": "Car service",
+            "description": "Change oil and tires",
+            "completed": false,
+            "due_date": "2026-03-21"
+          },
+          {
+            "user_id": 6,
+            "title": "Team meeting",
+            "description": "Discuss project milestones",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 7,
+            "title": "Write blog post",
+            "description": "Publish on personal blog",
+            "completed": false,
+            "due_date": "2026-03-23"
+          },
+          {
+            "user_id": 7,
+            "title": "Clean house",
+            "description": "Living room and kitchen",
+            "completed": true,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 8,
+            "title": "Cook dinner",
+            "description": "Try a new pasta recipe",
+            "completed": false,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 8,
+            "title": "Pay credit card",
+            "description": "Online payment",
+            "completed": true,
+            "due_date": "2026-03-15"
+          },
+          {
+            "user_id": 9,
+            "title": "Study TypeScript",
+            "description": "Complete course modules",
+            "completed": false,
+            "due_date": "2026-03-26"
+          },
+          {
+            "user_id": 9,
+            "title": "Grocery restock",
+            "description": "Buy snacks and drinks",
+            "completed": true,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 10,
+            "title": "Yoga session",
+            "description": "Morning routine",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 10,
+            "title": "Call plumber",
+            "description": "Fix kitchen sink leak",
+            "completed": false,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 11,
+            "title": "Update resume",
+            "description": "Add recent projects",
+            "completed": false,
+            "due_date": "2026-03-22"
+          },
+          {
+            "user_id": 11,
+            "title": "Walk dog",
+            "description": "Evening walk in park",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 12,
+            "title": "Prepare presentation",
+            "description": "Quarterly team update",
+            "completed": false,
+            "due_date": "2026-03-21"
+          },
+          {
+            "user_id": 12,
+            "title": "Watch documentary",
+            "description": "Learn about space exploration",
+            "completed": true,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 13,
+            "title": "Laundry",
+            "description": "Wash and fold clothes",
+            "completed": false,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 13,
+            "title": "Organize desk",
+            "description": "Clean and sort files",
+            "completed": true,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 14,
+            "title": "Book flight",
+            "description": "Trip to New York",
+            "completed": false,
+            "due_date": "2026-04-05"
+          },
+          {
+            "user_id": 14,
+            "title": "Call bank",
+            "description": "Update account details",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 15,
+            "title": "Practice guitar",
+            "description": "Learn new song",
+            "completed": false,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 15,
+            "title": "Pay rent",
+            "description": "March payment",
+            "completed": true,
+            "due_date": "2026-03-15"
+          },
+          {
+            "user_id": 16,
+            "title": "Plan birthday party",
+            "description": "Send invitations",
+            "completed": false,
+            "due_date": "2026-04-01"
+          },
+          {
+            "user_id": 16,
+            "title": "Clean garage",
+            "description": "Organize tools",
+            "completed": true,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 17,
+            "title": "Meditation",
+            "description": "20 minutes session",
+            "completed": false,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 17,
+            "title": "Grocery shopping",
+            "description": "Weekly essentials",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 18,
+            "title": "Fix bike",
+            "description": "Repair flat tire",
+            "completed": false,
+            "due_date": "2026-03-21"
+          },
+          {
+            "user_id": 18,
+            "title": "Read news",
+            "description": "Check latest headlines",
+            "completed": true,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 19,
+            "title": "Bake cake",
+            "description": "Chocolate cake for friend",
+            "completed": false,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 19,
+            "title": "Clean fridge",
+            "description": "Remove expired items",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 20,
+            "title": "Learn French",
+            "description": "Practice vocabulary",
+            "completed": false,
+            "due_date": "2026-03-25"
+          },
+          {
+            "user_id": 20,
+            "title": "Attend webinar",
+            "description": "Tech trends 2026",
+            "completed": true,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 21,
+            "title": "Write journal",
+            "description": "Daily reflection",
+            "completed": false,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 21,
+            "title": "Call friend",
+            "description": "Catch up",
+            "completed": true,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 22,
+            "title": "Gardening",
+            "description": "Plant new flowers",
+            "completed": false,
+            "due_date": "2026-03-22"
+          },
+          {
+            "user_id": 22,
+            "title": "Read article",
+            "description": "AI and machine learning",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 23,
+            "title": "Update software",
+            "description": "Install latest updates",
+            "completed": false,
+            "due_date": "2026-03-21"
+          },
+          {
+            "user_id": 23,
+            "title": "Clean windows",
+            "description": "Living room and kitchen",
+            "completed": true,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 24,
+            "title": "Watch tutorial",
+            "description": "Learn Docker basics",
+            "completed": false,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 24,
+            "title": "Call electrician",
+            "description": "Fix hallway lights",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 25,
+            "title": "Practice piano",
+            "description": "Learn new chord",
+            "completed": false,
+            "due_date": "2026-03-23"
+          },
+          {
+            "user_id": 25,
+            "title": "Pay insurance",
+            "description": "Car insurance renewal",
+            "completed": true,
+            "due_date": "2026-03-15"
+          },
+          {
+            "user_id": 26,
+            "title": "Organize closet",
+            "description": "Sort old clothes",
+            "completed": false,
+            "due_date": "2026-03-21"
+          },
+          {
+            "user_id": 26,
+            "title": "Check emails",
+            "description": "Respond to work messages",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 27,
+            "title": "Write report",
+            "description": "Weekly status update",
+            "completed": false,
+            "due_date": "2026-03-20"
+          },
+          {
+            "user_id": 27,
+            "title": "Clean bathroom",
+            "description": "Scrub tiles and sink",
+            "completed": true,
+            "due_date": "2026-03-18"
+          },
+          {
+            "user_id": 28,
+            "title": "Go jogging",
+            "description": "Morning exercise",
+            "completed": false,
+            "due_date": "2026-03-19"
+          },
+          {
+            "user_id": 28,
+            "title": "Visit library",
+            "description": "Borrow books",
+            "completed": true,
+            "due_date": "2026-03-17"
+          },
+          {
+            "user_id": 29,
+            "title": "Make presentation slides",
+            "description": "For Monday meeting",
+            "completed": false,
+            "due_date": "2026-03-22"
+          },
+          {
+            "user_id": 29,
+            "title": "Clean car",
+            "description": "Wash and vacuum",
+            "completed": true,
+            "due_date": "2026-03-16"
+          },
+          {
+            "user_id": 30,
+            "title": "Study JavaScript",
+            "description": "Practice exercises",
+            "completed": false,
+            "due_date": "2026-03-24"
+          },
+          {
+            "user_id": 30,
+            "title": "Organize pantry",
+            "description": "Label jars and cans",
+            "completed": true,
+            "due_date": "2026-03-18"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
